@@ -6,7 +6,7 @@ app.use(function(req, res, next){
     console.log('첫 번째 미들웨어에서 요청을 처리함.');
     
     req.user='mike';
-    next();
+    next();//다음 미들웨어로 넘김
 });
 
 app.use('/', function(req, res, next){
