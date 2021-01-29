@@ -7,7 +7,7 @@ client.fetch(RSS, {}, function(err, $, res){
     if (err){
         console.log("error"); return;
     }
-    
+    //RSS의 전체 경로를 지정하지 않고 CSS 선택자를 지정
     var city = $("location:nth-child(1) > city").text();
 
     //필요한 항목을 추출해서 표시
